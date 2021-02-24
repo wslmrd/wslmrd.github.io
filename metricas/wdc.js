@@ -33,7 +33,7 @@
      /*   }, {
             id: "plataforma",
             alias: "Plataforma_Dispositivo",
-            dataType: tableau.dataTypeEnum.string*/
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "modelo",
             alias: "Modelo_Dispositivo",
@@ -85,7 +85,7 @@
         }, {
             id: "segundos",
             alias: "Segundos",
-            dataType: tableau.dataTypeEnum.string 
+            dataType: tableau.dataTypeEnum.string */
         }];
     
         var tableSchema = {
@@ -113,7 +113,7 @@
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
                     "versaoFuncao": feat[i].versaoFuncao,
-                    /*"plataforma": feat[i].dispositivo.plataforma,*/
+                    /*"plataforma": feat[i].dispositivo.plataforma,
                     "modelo": feat[i].dispositivo.modelo,
                     "nomeUsuario": feat[i].dispositivo.usuario,
                     "email": feat[i].dispositivo.email,
@@ -126,7 +126,7 @@
                     "dia": feat[i].data.dia,
                     "horas": feat[i].data.horas,
                     "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos
+                    "segundos": feat[i].data.segundos*/
 
                 });
             }
