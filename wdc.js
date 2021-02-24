@@ -19,14 +19,27 @@
             alias: "Horas",
             dataType: tableau.dataTypeEnum.string
         }];
+
+        var colsEng = [{
+            id: "idFazenda",
+            alias: "idFazenda",
+            dataType: tableau.dataTypeEnum.string
+        }];
     
         var tableSchema = {
             id: "Firebase",
             alias: "Metricas",
             columns: cols
         };
+
+        var tableSchema1 = {
+            id: "Firebase",
+            alias: "Engajamento",
+            columns: colsEng
+        };
+
     
-        schemaCallback([tableSchema]);
+        schemaCallback([tableSchema], [tableSchema1]);
     };
 
     myConnector.getData = function(table, doneCallback) {
@@ -46,6 +59,20 @@
     
             table.appendRows(tableData);
             doneCallback();
+
+            var feat = resp.engajamentoFazendas,
+                tableDataEng = [];
+
+            // Iterate over the JSON object
+            for (var i = 0, len = feat.length; i < len; i++) {
+                tableData.push({
+                    "idFazenda": feat[i].idFazenda,
+                });
+            }
+
+            table.appendRows(tableDataEng);
+            doneCallback();
+
         });
     };
 
