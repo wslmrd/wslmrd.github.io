@@ -21,7 +21,7 @@
         { id : "tipo", alias:"Tipo", dataType : tableau.dataType.string },
         { id : "intencao", alias:"Intencao", dataType : tableau.dataType.string },
         { id : "usuario", alias:"Usuario", dataType : tableau.dataType.string },
-    ]
+    ];
 
     var tableInfo = {
     id : "uber",
@@ -33,7 +33,7 @@
     };
     
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://southamerica-east1-prodap-x.cloudfunctions.net/intencao_metricas teste.json", function(resp) {
+        $.getJSON("https://southamerica-east1-prodap-x.cloudfunctions.net/intencao_metricas", function(resp) {
         var feat = resp;
         tableData = [];
         // Iterate over the JSON object
