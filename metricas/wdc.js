@@ -112,7 +112,7 @@
                     "idFazenda": feat[i].idFazenda,
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
-                    "versaoFuncao": feat[i].versaoFuncao,
+                    "versaoFuncao": feat[i].versaoFuncao
                     /*"plataforma": feat[i].dispositivo.plataforma,
                     "modelo": feat[i].dispositivo.modelo,
                     "nomeUsuario": feat[i].dispositivo.usuario,
