@@ -16,9 +16,9 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "idFazenda",
-            alias: "idFazenda",
+            alias: "Id_Fazenda",
             dataType: tableau.dataTypeEnum.string
-/*        }, {
+        }, {
             id: "app",
             alias: "App",
             dataType: tableau.dataTypeEnum.string
@@ -85,7 +85,7 @@
         }, {
             id: "segundos",
             alias: "Segundos",
-            dataType: tableau.dataTypeEnum.Integer */
+            dataType: tableau.dataTypeEnum.Integer 
         }];
     
         var tableSchema = {
@@ -109,8 +109,8 @@
                     "tipo": feat[i].tipo,
                     "intencao": feat[i].intencao,
                     "usuario": feat[i].usuario,
-                    "idFazenda": feat[i].idFazenda
-                    /*"app": feat[i].app,
+                    "idFazenda": feat[i].idFazenda,
+                    "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
                     "versaoFuncao": feat[i].versaoFuncao,
                     "plataforma": feat[i].dispositivo.plataforma,
@@ -126,7 +126,7 @@
                     "dia": feat[i].data.dia,
                     "horas": feat[i].data.horas,
                     "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos*/
+                    "segundos": feat[i].data.segundos
 
                 });
             }
