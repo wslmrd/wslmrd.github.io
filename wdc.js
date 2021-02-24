@@ -4,20 +4,21 @@
     myConnector.getSchema = function (schemaCallback) {
         var cols = [{
             id: "tipo",
+            alias: "Tipo",
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "intencao",
-            alias: "intencao",
+            alias: "Intencao",
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "usuario",
-            alias: "usuario",
+            alias: "Usuario",
             dataType: tableau.dataTypeEnum.string
         }];
     
         var tableSchema = {
-            id: "earthquakeFeed",
-            alias: "Earthquakes with magnitude greater than 4.5 in the last seven days",
+            id: "Firebase",
+            alias: "Metricas",
             columns: cols
         };
     
@@ -46,7 +47,7 @@
     tableau.registerConnector(myConnector);
     $(document).ready(function () {
         $("#submitButton").click(function () {
-            tableau.connectionName = "USGS Earthquake Feed";
+            tableau.connectionName = "Firebase";
             tableau.submit();
         });
     });
