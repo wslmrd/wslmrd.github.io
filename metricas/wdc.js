@@ -30,10 +30,10 @@
             id: "versaoFuncao",
             alias: "Versao_Funcao",
             dataType: tableau.dataTypeEnum.string
-        }, {
+     /*   }, {
             id: "plataforma",
             alias: "Plataforma_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.string*/
         }, {
             id: "modelo",
             alias: "Modelo_Dispositivo",
@@ -113,7 +113,7 @@
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
                     "versaoFuncao": feat[i].versaoFuncao,
-                    "plataforma": feat[i].dispositivo.plataforma,
+                    /*"plataforma": feat[i].dispositivo.plataforma,*/
                     "modelo": feat[i].dispositivo.modelo,
                     "nomeUsuario": feat[i].dispositivo.usuario,
                     "email": feat[i].dispositivo.email,
