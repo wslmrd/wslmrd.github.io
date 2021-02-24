@@ -30,62 +30,7 @@
             id: "versaoFuncao",
             alias: "Versao_Funcao",
             dataType: tableau.dataTypeEnum.string
-/*        }, {
-            id: "plataforma",
-            alias: "Plataforma_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "modelo",
-            alias: "Modelo_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "nomeUsuario",
-            alias: "Nome_Usuario_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "email",
-            alias: "Email_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "usuario_Lore",
-            alias: "Usuario_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "versaoLore",
-            alias: "Versao_Lore_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "_seconds",
-            alias: "SecondsUTC",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "_nanoseconds",
-            alias: "Nano_Seconds_UTC",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "ano",
-            alias: "Ano",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "mes",
-            alias: "Mes",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "dia",
-            alias: "Dia",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "horas",
-            alias: "Horas",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "minutos",
-            alias: "Minutos",
-            dataType: tableau.dataTypeEnum.Integer
-        }, {
-            id: "segundos",
-            alias: "Segundos",
-            dataType: tableau.dataTypeEnum.Integer */
+
         }];
     
         var tableSchema = {
@@ -113,20 +58,6 @@
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
                     "versaoFuncao": feat[i].versaoFuncao
-                    /*"plataforma": feat[i].dispositivo.plataforma,
-                    "modelo": feat[i].dispositivo.modelo,
-                    "nomeUsuario": feat[i].dispositivo.usuario,
-                    "email": feat[i].dispositivo.email,
-                    "usuario_Lore": feat[i].dispositivo.usuario,
-                    "versaoLore": feat[i].dispositivo.versaoLore,
-                    "_seconds": feat[i].dataUTC._seconds,
-                    "_nanoseconds": feat[i].dataUTC._nanoseconds,
-                    "ano": feat[i].data.ano,
-                    "mes": feat[i].data.mes,
-                    "dia": feat[i].data.dia,
-                    "horas": feat[i].data.horas,
-                    "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos*/
 
                 });
             }
