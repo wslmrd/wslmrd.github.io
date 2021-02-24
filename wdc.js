@@ -37,7 +37,7 @@
         var feat = resp;
         tableData = [];
         // Iterate over the JSON object
-        for (var i = 0, len = feat.metricas.length; i < len; i++) {
+        for (var i = 0, len = feat.length; i < len; i++) {
         tableData.push({
         "tipo": feat[i]["Tipo"],
         "intencao": feat[i]["Intencao"],
