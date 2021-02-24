@@ -53,7 +53,7 @@
         }, {
             id: "versaoLore",
             alias: "Versao_Lore_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.string*/
         }, {
             id: "_seconds",
             alias: "SecondsUTC",
@@ -85,7 +85,7 @@
         }, {
             id: "segundos",
             alias: "Segundos",
-            dataType: tableau.dataTypeEnum.string */
+            dataType: tableau.dataTypeEnum.string 
         }];
     
         var tableSchema = {
@@ -112,13 +112,13 @@
                     "idFazenda": feat[i].idFazenda,
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
-                    "versaoFuncao": feat[i].versaoFuncao
+                    "versaoFuncao": feat[i].versaoFuncao,
                     /*"plataforma": feat[i].dispositivo.plataforma,
                     "modelo": feat[i].dispositivo.modelo,
                     "nomeUsuario": feat[i].dispositivo.usuario,
                     "email": feat[i].dispositivo.email,
                     "usuario_Lore": feat[i].dispositivo.usuario,
-                    "versaoLore": feat[i].dispositivo.versaoLore,
+                    "versaoLore": feat[i].dispositivo.versaoLore,*/
                     "_seconds": feat[i].dataUTC._seconds,
                     "_nanoseconds": feat[i].dataUTC._nanoseconds,
                     "ano": feat[i].data.ano,
@@ -126,7 +126,7 @@
                     "dia": feat[i].data.dia,
                     "horas": feat[i].data.horas,
                     "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos*/
+                    "segundos": feat[i].data.segundos
 
                 });
             }
