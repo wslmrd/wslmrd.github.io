@@ -17,7 +17,7 @@
         }, {
             id: "idFazenda",
             alias: "idFazenda",
-            dataType: tableau.dataTypeEnum.String
+            dataType: tableau.dataTypeEnum.string
 /*        }, {
             id: "app",
             alias: "App",
