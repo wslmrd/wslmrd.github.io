@@ -14,6 +14,10 @@
             id: "usuario",
             alias: "Usuario",
             dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "horas",
+            alias: "Horas",
+            dataType: tableau.dataTypeEnum.string
         }];
     
         var tableSchema = {
@@ -36,6 +40,7 @@
                     "tipo": feat[i].tipo,
                     "intencao": feat[i].intencao,
                     "usuario": feat[i].usuario,
+                    "horas": feat[i].data.horas
                 });
             }
     
