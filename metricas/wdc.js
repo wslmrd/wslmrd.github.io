@@ -30,7 +30,7 @@
             id: "versaoFuncao",
             alias: "Versao_Funcao",
             dataType: tableau.dataTypeEnum.string
-        }, {
+/*        }, {
             id: "plataforma",
             alias: "Plataforma_Dispositivo",
             dataType: tableau.dataTypeEnum.string
@@ -85,7 +85,7 @@
         }, {
             id: "segundos",
             alias: "Segundos",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.Integer */
         }];
     
         var tableSchema = {
@@ -113,7 +113,7 @@
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
                     "versaoFuncao": feat[i].versaoFuncao,
-                    "plataforma": feat[i].dispositivo.plataforma,
+                    /*"plataforma": feat[i].dispositivo.plataforma,
                     "modelo": feat[i].dispositivo.modelo,
                     "nomeUsuario": feat[i].dispositivo.usuario,
                     "email": feat[i].dispositivo.email,
@@ -126,7 +126,7 @@
                     "dia": feat[i].data.dia,
                     "horas": feat[i].data.horas,
                     "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos
+                    "segundos": feat[i].data.segundos*/
 
                 });
             }
