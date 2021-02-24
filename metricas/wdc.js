@@ -57,35 +57,35 @@
         }, {
             id: "_seconds",
             alias: "SecondsUTC",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "_nanoseconds",
             alias: "Nano_Seconds_UTC",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "ano",
             alias: "Ano",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "mes",
             alias: "Mes",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "dia",
             alias: "Dia",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "horas",
             alias: "Horas",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "minutos",
             alias: "Minutos",
-            dataType: tableau.dataTypeEnum.Integer
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "segundos",
             alias: "Segundos",
-            dataType: tableau.dataTypeEnum.Integer 
+            dataType: tableau.dataTypeEnum.string 
         }];
     
         var tableSchema = {
