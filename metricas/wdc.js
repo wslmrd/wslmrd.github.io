@@ -14,7 +14,7 @@
             id: "usuario",
             alias: "Usuario",
             dataType: tableau.dataTypeEnum.string
-        }, {
+       /* }, {
             id: "idFazenda",
             alias: "idFazenda",
             dataType: tableau.dataTypeEnum.Integer
@@ -29,7 +29,7 @@
         }, {
             id: "versaoFuncao",
             alias: "Versao_Funcao",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.string*/
 
         }];
     
@@ -54,10 +54,10 @@
                     "tipo": feat[i].tipo,
                     "intencao": feat[i].intencao,
                     "usuario": feat[i].usuario,
-                    "idFazenda": feat[i].idFazenda,
+                    /*"idFazenda": feat[i].idFazenda,
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
-                    "versaoFuncao": feat[i].versaoFuncao
+                    "versaoFuncao": feat[i].versaoFuncao*/
 
                 });
             }
