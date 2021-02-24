@@ -33,7 +33,7 @@
     };
     
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://southamerica-east1-prodap-x.cloudfunctions.net/intencao_metricas", function(resp) {
+        $.getJSON("teste.json", function(resp) {
         var feat = resp;
         tableData = [];
         // Iterate over the JSON object
