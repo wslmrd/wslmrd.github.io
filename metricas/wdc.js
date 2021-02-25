@@ -30,7 +30,7 @@
             id: "versaoFuncao",
             alias: "Versao_Funcao",
             dataType: tableau.dataTypeEnum.string
-     /*   }, {
+        }, {
             id: "plataforma",
             alias: "Plataforma_Dispositivo",
             dataType: tableau.dataTypeEnum.string
@@ -53,7 +53,7 @@
         }, {
             id: "versaoLore",
             alias: "Versao_Lore_Dispositivo",
-            dataType: tableau.dataTypeEnum.string*/
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "_seconds",
             alias: "SecondsUTC",
@@ -102,7 +102,9 @@
         $.getJSON("https://southamerica-east1-prodap-x.cloudfunctions.net/intencao_metricas", function(resp) {
             var feat = resp.metricas,
                 tableData = [];
-    
+			
+			const dispositivo = feat[i].dispositivo || {}
+			
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
@@ -113,12 +115,12 @@
                     "app": feat[i].app,
                     "codigoDialogo": feat[i].codigoDialogo,
                     "versaoFuncao": feat[i].versaoFuncao,
-                    /*"plataforma": feat[i].dispositivo.plataforma,
-                    "modelo": feat[i].dispositivo.modelo,
-                    "nomeUsuario": feat[i].dispositivo.usuario,
-                    "email": feat[i].dispositivo.email,
-                    "usuario_Lore": feat[i].dispositivo.usuario,
-                    "versaoLore": feat[i].dispositivo.versaoLore,*/
+                    "plataforma": dispositivo.plataforma,
+                    "modelo": dispositivo.modelo,
+                    "nomeUsuario": dispositivo.usuario,
+                    "email": dispositivo.email,
+                    "usuario_Lore": dispositivo.usuario,
+                    "versaoLore": dispositivo.versaoLore,
                     "_seconds": feat[i].dataUTC._seconds,
                     "_nanoseconds": feat[i].dataUTC._nanoseconds,
                     "ano": feat[i].data.ano,
