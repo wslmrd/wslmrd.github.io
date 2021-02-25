@@ -30,7 +30,7 @@
             id: "versaoFuncao",
             alias: "Versao_Funcao",
             dataType: tableau.dataTypeEnum.string
-        }, {
+     /*   }, {
             id: "plataforma",
             alias: "Plataforma_Dispositivo",
             dataType: tableau.dataTypeEnum.string
@@ -53,7 +53,7 @@
         }, {
             id: "versaoLore",
             alias: "Versao_Lore_Dispositivo",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.string*/
         }, {
             id: "_seconds",
             alias: "SecondsUTC",
@@ -103,11 +103,11 @@
             var feat = resp.metricas,
                 tableData = [];
 			
-			const dispositivo = feat[i].dispositivo || {}
-			
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
-                tableData.push({
+				const dispositivo = feat[i].dispositivo || {}
+			
+				tableData.push({
                     "tipo": feat[i].tipo,
                     "intencao": feat[i].intencao,
                     "usuario": feat[i].usuario,
