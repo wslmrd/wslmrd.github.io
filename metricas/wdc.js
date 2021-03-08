@@ -110,11 +110,11 @@
             id: "excluido_Dialogo",
             alias: "excluido_dialogo",
             dataType: tableau.dataTypeEnum.string
-        }, {
+       /* }, {
             id: "data_fim_Dialogo",
             alias: "data_fim_dialogo",
             dataType: tabelau.dataTypeEnum.string
-       /* }, {
+        }, {
             id: "dataCriacao_Dialogo",
             alias: "data_criacao_dialogo",
             dataType: tableau.dataTypeEnum.string
@@ -180,7 +180,7 @@
                     "UsuarioCriacao": dialogo.UsuarioCriacao,
                     "UsuarioAlteracao": dialogo.UsuarioAlteracao,
                     "excluido": dialogo.excluido,
-                    "data_fim_Dialogo": dialogo.fim,
+                    "data_fim_Dialogo": dialogo.fim
                     /*"dataCriacao_Dialogo": dialogo.dataCriacao
                     "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                     "descricao_Dialogo": dialogo.descricao,
