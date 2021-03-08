@@ -159,7 +159,7 @@
             for (var i = 0, len = feat.length; i < len; i++) {
 				const dispositivo = feat[i].dispositivo || {}
                 const dialogo = feat[i].dialogo || {}
-                if (feat[i].dialogo.lido.length > 1) {
+                if (feat[i].dialogo.lido && feat[i].dialogo.lido.length > 1) {
                     for (var j = 0, len1 = feat[i].dialogo.lido.length; j < len1; j++) {
                         tableData.push({
                             "tipo": feat[i].tipo,
@@ -200,7 +200,7 @@
                     }
                 
                 }
-                else if (feat[i].dialogo.lido.length == 1) {
+                else if (feat[i].dialogo.lido && feat[i].dialogo.lido.length == 1) {
                     tableData.push({
                         "tipo": feat[i].tipo,
                         "intencao": feat[i].intencao,
@@ -270,7 +270,8 @@
                         "dataCriacao_Dialogo": dialogo.dataCriacao,
                         "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                         "descricao_Dialogo": dialogo.descricao,
-                        "data_inicio_Dialogo": dialogo.inicio
+                        "data_inicio_Dialogo": dialogo.inicio,
+                        "lido": null
                     });
                 }
                 
