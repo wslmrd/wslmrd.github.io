@@ -195,7 +195,7 @@
                             "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                             "descricao_Dialogo": dialogo.descricao,
                             "data_inicio_Dialogo": dialogo.inicio,
-                            "lido": feat[i].dialogo.lido[j]
+                            "lido": feat[i].dialogo.lido[j].usuario
         
                         });
                     }
@@ -235,7 +235,7 @@
                         "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                         "descricao_Dialogo": dialogo.descricao,
                         "data_inicio_Dialogo": dialogo.inicio,
-                        "lido": feat[i].dialogo.lido[0]
+                        "lido": feat[i].dialogo.lido[0].usuario
                     });
                 }
                 else {
