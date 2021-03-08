@@ -179,12 +179,12 @@
                     "categoria_dialogo": dialogo.categoria,
                     "UsuarioCriacao": dialogo.UsuarioCriacao,
                     "UsuarioAlteracao": dialogo.UsuarioAlteracao,
-                    "excluido": dialogo.excluido,
-                    "data_fim_Dialogo": dialogo.fim,
+                    "excluido": dialogo.excluido
+                   /* "data_fim_Dialogo": dialogo.fim,
                     "dataCriacao_Dialogo": dialogo.dataCriacao,
                     "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                     "descricao_Dialogo": dialogo.descricao,
-                    "data_inicio_Dialogo": dialogo.inicio
+                    "data_inicio_Dialogo": dialogo.inicio*/
 
 
                 });
