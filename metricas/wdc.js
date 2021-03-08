@@ -114,22 +114,22 @@
             id: "data_fim_Dialogo",
             alias: "data_fim_dialogo",
             dataType: tabelau.dataTypeEnum.string
-        }, {
+       /* }, {
             id: "dataCriacao_Dialogo",
             alias: "data_criacao_dialogo",
-            dataType: tableau.DataTypeEnum.string
-       /* }, {
+            dataType: tableau.dataTypeEnum.string
+        }, {
             id: "dataAlteracao_Dialogo",
             alias: "data_alteracao_dialogo",
-            dataType: tableau.DataTypeEnum.string
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "descricao_Dialogo",
             alias: "descricao_dialogo",
-            dataType: tableau.DataTypeEnum.string  
+            dataType: tableau.dataTypeEnum.string  
         }, {
             id: "data_inicio_Dialogo",
             alias: "data_inicio_dialogo",
-            dataType: tableau.DataTypeEnum.string     */
+            dataType: tableau.dataTypeEnum.string     */
         }];
     
         var tableSchema = {
@@ -181,8 +181,8 @@
                     "UsuarioAlteracao": dialogo.UsuarioAlteracao,
                     "excluido": dialogo.excluido,
                     "data_fim_Dialogo": dialogo.fim,
-                    "dataCriacao_Dialogo": dialogo.dataCriacao
-                    /*"dataAlteracao_Dialogo": dialogo.dataAlteracao,
+                    /*"dataCriacao_Dialogo": dialogo.dataCriacao
+                    "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                     "descricao_Dialogo": dialogo.descricao,
                     "data_inicio_Dialogo": dialogo.inicio*/
 
