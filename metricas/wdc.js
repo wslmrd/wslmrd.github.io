@@ -112,7 +112,7 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "data_fim_Dialogo",
-            alias: "fim_dialogo",
+            alias: "data_fim_dialogo",
             dataType: tabelau.DataTypeEnum.string
         }, {
             id: "dataCriacao_Dialogo",
