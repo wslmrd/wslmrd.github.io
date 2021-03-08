@@ -110,7 +110,7 @@
             id: "excluido_Dialogo",
             alias: "excluido_dialogo",
             dataType: tableau.dataTypeEnum.string
-        }, {
+       /* }, {
             id: "data_fim_Dialogo",
             alias: "fim_dialogo",
             dataType: tabelau.DataTypeEnum.string
@@ -129,7 +129,7 @@
         }, {
             id: "data_inicio_Dialogo",
             alias: "data_inicio_dialogo",
-            dataType: tableau.DataTypeEnum.string       
+            dataType: tableau.DataTypeEnum.string   */    
         }];
     
         var tableSchema = {
