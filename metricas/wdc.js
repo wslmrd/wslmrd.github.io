@@ -86,6 +86,14 @@
             id: "segundos",
             alias: "Segundos",
             dataType: tableau.dataTypeEnum.string 
+        }, {
+            id: "id",
+            alias: "id_metricas",
+            dataType:tableau.dataTypeEnum.string
+        }, {
+            id: "dataEmISOString",
+            alias: "data_Metrica",
+            dataType: tableau.dataTypeEnum.string
         }];
     
         var tableSchema = {
@@ -99,7 +107,7 @@
     };
 
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://southamerica-east1-prodap-x.cloudfunctions.net/intencao_metricas", function(resp) {
+        $.getJSON("https://southamerica-east1-prodap-x.cloudfunctions.net/intencao_metricas?visaoTableau=true", function(resp) {
             var feat = resp.metricas,
                 tableData = [];
 			
@@ -128,7 +136,10 @@
                     "dia": feat[i].data.dia,
                     "horas": feat[i].data.horas,
                     "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos
+                    "segundos": feat[i].data.segundos,
+                    "id": feat[i].id,
+                    "dataEmISOString": feat[i].dataEmISOString
+
 
                 });
             }
