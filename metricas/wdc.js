@@ -121,15 +121,15 @@
         }, {
             id: "dataAlteracao_Dialogo",
             alias: "data_alteracao_dialogo",
-            dataType: tableau.DataTypeEnum.String
+            dataType: tableau.DataTypeEnum.string
         }, {
             id: "descricao_Dialogo",
             alias: "descricao_dialogo",
-            dataType: tableau.DataTypeEnum.String  
+            dataType: tableau.DataTypeEnum.string  
         }, {
             id: "data_inicio_Dialogo",
             alias: "data_inicio_dialogo",
-            dataType: tableau.DataTypeEnum.String       
+            dataType: tableau.DataTypeEnum.string       
         }];
     
         var tableSchema = {
