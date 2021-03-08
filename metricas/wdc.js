@@ -271,7 +271,7 @@
                         "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                         "descricao_Dialogo": dialogo.descricao,
                         "data_inicio_Dialogo": dialogo.inicio,
-                        "lido": null
+                        "lido": ''
                     });
                 }
                 
