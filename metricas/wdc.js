@@ -129,7 +129,11 @@
         }, {
             id: "data_inicio_Dialogo",
             alias: "data_inicio_dialogo",
-            dataType: tableau.dataTypeEnum.string     
+            dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "nomeFazenda_Dialogo",
+            alias: "nome_fazenda_dialogo",
+            dataType: tableau.dataTypeEnum.string             
         }];
     
         var tableSchema = {
@@ -184,7 +188,8 @@
                     "dataCriacao_Dialogo": dialogo.dataCriacao,
                     "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                     "descricao_Dialogo": dialogo.descricao,
-                    "data_inicio_Dialogo": dialogo.inicio
+                    "data_inicio_Dialogo": dialogo.inicio,
+                    "nomeFazenda_Dialogo": dialogo.fazendas.nomeFazenda
 
 
                 });
