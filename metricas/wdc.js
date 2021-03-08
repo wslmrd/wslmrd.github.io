@@ -155,9 +155,7 @@
             for (var i = 0, len = feat.length; i < len; i++) {
 				const dispositivo = feat[i].dispositivo || {}
                 const dialogo = feat[i].dialogo || {}
-                var fazendas = dialogo.fazendas;
-                for(var j = 0, len1 = fazendas.length; j < len1; j++) {
-			
+                const fazendas = feat[i].dialogo.fazendas || {}
 				tableData.push({
                     "tipo": feat[i].tipo,
                     "intencao": feat[i].intencao,
@@ -191,9 +189,9 @@
                     "dataAlteracao_Dialogo": dialogo.dataAlteracao,
                     "descricao_Dialogo": dialogo.descricao,
                     "data_inicio_Dialogo": dialogo.inicio,
-                    "nomeFazenda_Dialogo": fazendas[j].nomeFazenda
+                    "nomeFazenda_Dialogo": fazendas.nomeFazenda
                 });
-            }}
+            }
     
             table.appendRows(tableData);
             doneCallback();
