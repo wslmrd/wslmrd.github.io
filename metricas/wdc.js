@@ -94,6 +94,22 @@
             id: "dataEmISOString",
             alias: "data_Metrica",
             dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "categoria_dialogo",
+            alias: "categoria_dialogo",
+            dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "UsuarioCriacao",
+            alias: "usuario_Criacao_dialogo",
+            dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "UsuarioAlteracao",
+            alias: "usuario_Alteracao_dialogo",
+            dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "excluido",
+            alias: "excluido_dialogo",
+            dataType: tableau.dataTypeEnum.string
         }];
     
         var tableSchema = {
@@ -114,6 +130,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
 				const dispositivo = feat[i].dispositivo || {}
+                const dialogo = feat[i].dialogo || {}
 			
 				tableData.push({
                     "tipo": feat[i].tipo,
@@ -138,7 +155,12 @@
                     "minutos": feat[i].data.minutos,
                     "segundos": feat[i].data.segundos,
                     "id": feat[i].id,
-                    "dataEmISOString": feat[i].dataEmISOString
+                    "dataEmISOString": feat[i].dataEmISOString,
+                    "categoria_dialogo": dialogo.categoria,
+                    "UsuarioCriacao": dialogo.UsuarioCriacao,
+                    "UsuarioAlteracao": dialogo.UsuarioAlteracao,
+                    "excluido": dialogo.excluido
+
 
 
                 });
