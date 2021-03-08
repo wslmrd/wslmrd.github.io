@@ -133,7 +133,11 @@
         }, {
             id: "nomeFazenda_Dialogo",
             alias: "nome_fazenda_dialogo",
-            dataType: tableau.dataTypeEnum.string             
+            dataType: tableau.dataTypeEnum.string        
+        }, {
+            id: "lido",
+            alias: "lido",
+            dataType: tableau.dataTypeEnum.string       
         }];
     
         var tableSchema = {
@@ -155,42 +159,123 @@
             for (var i = 0, len = feat.length; i < len; i++) {
 				const dispositivo = feat[i].dispositivo || {}
                 const dialogo = feat[i].dialogo || {}
-                const fazendas = feat[i].dialogo.fazendas || {}
-				tableData.push({
-                    "tipo": feat[i].tipo,
-                    "intencao": feat[i].intencao,
-                    "usuario": feat[i].usuario,
-                    "idFazenda": feat[i].idFazenda,
-                    "app": feat[i].app,
-                    "codigoDialogo": feat[i].codigoDialogo,
-                    "versaoFuncao": feat[i].versaoFuncao,
-                    "plataforma": dispositivo.plataforma,
-                    "modelo": dispositivo.modelo,
-                    "nomeUsuario": dispositivo.usuario,
-                    "email": dispositivo.email,
-                    "usuario_Lore": dispositivo.usuario,
-                    "versaoLore": dispositivo.versaoLore,
-                    "_seconds": feat[i].dataUTC._seconds,
-                    "_nanoseconds": feat[i].dataUTC._nanoseconds,
-                    "ano": feat[i].data.ano,
-                    "mes": feat[i].data.mes,
-                    "dia": feat[i].data.dia,
-                    "horas": feat[i].data.horas,
-                    "minutos": feat[i].data.minutos,
-                    "segundos": feat[i].data.segundos,
-                    "id": feat[i].id,
-                    "dataEmISOString": feat[i].dataEmISOString,
-                    "categoria_dialogo": dialogo.categoria,
-                    "UsuarioCriacao": dialogo.UsuarioCriacao,
-                    "UsuarioAlteracao": dialogo.UsuarioAlteracao,
-                    "excluido": dialogo.excluido,
-                    "data_fim_Dialogo": dialogo.fim,
-                    "dataCriacao_Dialogo": dialogo.dataCriacao,
-                    "dataAlteracao_Dialogo": dialogo.dataAlteracao,
-                    "descricao_Dialogo": dialogo.descricao,
-                    "data_inicio_Dialogo": dialogo.inicio,
-                    "nomeFazenda_Dialogo": fazendas.nomeFazenda
-                });
+                if (feat[i].dialogo.lido.length > 1) {
+                    for (var j = 0, len1 = feat[i].dialogo.lido.length; j < len1; j++) {
+                        tableData.push({
+                            "tipo": feat[i].tipo,
+                            "intencao": feat[i].intencao,
+                            "usuario": feat[i].usuario,
+                            "idFazenda": feat[i].idFazenda,
+                            "app": feat[i].app,
+                            "codigoDialogo": feat[i].codigoDialogo,
+                            "versaoFuncao": feat[i].versaoFuncao,
+                            "plataforma": dispositivo.plataforma,
+                            "modelo": dispositivo.modelo,
+                            "nomeUsuario": dispositivo.usuario,
+                            "email": dispositivo.email,
+                            "usuario_Lore": dispositivo.usuario,
+                            "versaoLore": dispositivo.versaoLore,
+                            "_seconds": feat[i].dataUTC._seconds,
+                            "_nanoseconds": feat[i].dataUTC._nanoseconds,
+                            "ano": feat[i].data.ano,
+                            "mes": feat[i].data.mes,
+                            "dia": feat[i].data.dia,
+                            "horas": feat[i].data.horas,
+                            "minutos": feat[i].data.minutos,
+                            "segundos": feat[i].data.segundos,
+                            "id": feat[i].id,
+                            "dataEmISOString": feat[i].dataEmISOString,
+                            "categoria_dialogo": dialogo.categoria,
+                            "UsuarioCriacao": dialogo.UsuarioCriacao,
+                            "UsuarioAlteracao": dialogo.UsuarioAlteracao,
+                            "excluido": dialogo.excluido,
+                            "data_fim_Dialogo": dialogo.fim,
+                            "dataCriacao_Dialogo": dialogo.dataCriacao,
+                            "dataAlteracao_Dialogo": dialogo.dataAlteracao,
+                            "descricao_Dialogo": dialogo.descricao,
+                            "data_inicio_Dialogo": dialogo.inicio,
+                            "lido": feat[i].dialogo.lido[j]
+        
+                        });
+                    }
+                
+                }
+                else if (feat[i].dialogo.lido.length == 1) {
+                    tableData.push({
+                        "tipo": feat[i].tipo,
+                        "intencao": feat[i].intencao,
+                        "usuario": feat[i].usuario,
+                        "idFazenda": feat[i].idFazenda,
+                        "app": feat[i].app,
+                        "codigoDialogo": feat[i].codigoDialogo,
+                        "versaoFuncao": feat[i].versaoFuncao,
+                        "plataforma": dispositivo.plataforma,
+                        "modelo": dispositivo.modelo,
+                        "nomeUsuario": dispositivo.usuario,
+                        "email": dispositivo.email,
+                        "usuario_Lore": dispositivo.usuario,
+                        "versaoLore": dispositivo.versaoLore,
+                        "_seconds": feat[i].dataUTC._seconds,
+                        "_nanoseconds": feat[i].dataUTC._nanoseconds,
+                        "ano": feat[i].data.ano,
+                        "mes": feat[i].data.mes,
+                        "dia": feat[i].data.dia,
+                        "horas": feat[i].data.horas,
+                        "minutos": feat[i].data.minutos,
+                        "segundos": feat[i].data.segundos,
+                        "id": feat[i].id,
+                        "dataEmISOString": feat[i].dataEmISOString,
+                        "categoria_dialogo": dialogo.categoria,
+                        "UsuarioCriacao": dialogo.UsuarioCriacao,
+                        "UsuarioAlteracao": dialogo.UsuarioAlteracao,
+                        "excluido": dialogo.excluido,
+                        "data_fim_Dialogo": dialogo.fim,
+                        "dataCriacao_Dialogo": dialogo.dataCriacao,
+                        "dataAlteracao_Dialogo": dialogo.dataAlteracao,
+                        "descricao_Dialogo": dialogo.descricao,
+                        "data_inicio_Dialogo": dialogo.inicio,
+                        "lido": feat[i].dialogo.lido[0]
+                    });
+                }
+                else {
+                    tableData.push({
+                        "tipo": feat[i].tipo,
+                        "intencao": feat[i].intencao,
+                        "usuario": feat[i].usuario,
+                        "idFazenda": feat[i].idFazenda,
+                        "app": feat[i].app,
+                        "codigoDialogo": feat[i].codigoDialogo,
+                        "versaoFuncao": feat[i].versaoFuncao,
+                        "plataforma": dispositivo.plataforma,
+                        "modelo": dispositivo.modelo,
+                        "nomeUsuario": dispositivo.usuario,
+                        "email": dispositivo.email,
+                        "usuario_Lore": dispositivo.usuario,
+                        "versaoLore": dispositivo.versaoLore,
+                        "_seconds": feat[i].dataUTC._seconds,
+                        "_nanoseconds": feat[i].dataUTC._nanoseconds,
+                        "ano": feat[i].data.ano,
+                        "mes": feat[i].data.mes,
+                        "dia": feat[i].data.dia,
+                        "horas": feat[i].data.horas,
+                        "minutos": feat[i].data.minutos,
+                        "segundos": feat[i].data.segundos,
+                        "id": feat[i].id,
+                        "dataEmISOString": feat[i].dataEmISOString,
+                        "categoria_dialogo": dialogo.categoria,
+                        "UsuarioCriacao": dialogo.UsuarioCriacao,
+                        "UsuarioAlteracao": dialogo.UsuarioAlteracao,
+                        "excluido": dialogo.excluido,
+                        "data_fim_Dialogo": dialogo.fim,
+                        "dataCriacao_Dialogo": dialogo.dataCriacao,
+                        "dataAlteracao_Dialogo": dialogo.dataAlteracao,
+                        "descricao_Dialogo": dialogo.descricao,
+                        "data_inicio_Dialogo": dialogo.inicio
+                    });
+                }
+                
+
+
             }
     
             table.appendRows(tableData);
