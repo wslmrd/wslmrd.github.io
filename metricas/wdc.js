@@ -113,7 +113,7 @@
         }, {
             id: "data_fim_Dialogo",
             alias: "data_fim_dialogo",
-            dataType: tabelau.DataTypeEnum.string
+            dataType: tabelau.dataTypeEnum.string
         }, {
             id: "dataCriacao_Dialogo",
             alias: "data_criacao_dialogo",
